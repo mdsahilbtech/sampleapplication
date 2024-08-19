@@ -30,10 +30,5 @@ spec:
     volumes:
       - name: pv-volume
         nfs:
-<<<<<<< HEAD
-        server: fs-4ddf4a9c.efs.ap-south-1.amazonaws.com 
-        path: /
-=======
         server: fs-0008a722cc14395df.efs.us-east-1.amazonaws.com 
         path: /
->>>>>>> 4032d91 (testnew)
