@@ -7,9 +7,9 @@ spec:
   matchLabels:
     app: efs-provisioner
     replicas: 1
-    strategy:
-     type: Recreate
-    template:
+  strategy:
+    type: Recreate
+  template:
     metadata:
     labels:
        app: efs-provisioner
