@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
    name: efs-provisioner
 spec:
+  replicas: 1
   selector:
-  matchLabels:
-    app: efs-provisioner
-    replicas: 1
+   matchLabels:
+    app: efs-provisioner  
   strategy:
     type: Recreate
   template:
@@ -30,5 +30,5 @@ spec:
     volumes:
       - name: pv-volume
         nfs:
-        server: fs-0008a722cc14395df.efs.us-east-1.amazonaws.com 
-        path: /
+         server: fs-0008a722cc14395df.efs.us-east-1.amazonaws.com 
+         path: /
